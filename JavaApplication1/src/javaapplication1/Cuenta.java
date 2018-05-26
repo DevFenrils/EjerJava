@@ -11,8 +11,8 @@ package javaapplication1;
  */
 public class Cuenta {
 
-    public String titular;
-    public Double cantidad;
+    private String titular;
+    private Double cantidad;
     
     
     public Cuenta(String getTitular) {
@@ -22,7 +22,11 @@ public class Cuenta {
     
     public Cuenta(String getTitular, Double getCant) {
         this.titular = getTitular;
-        this.cantidad = getCant;
+        if(getCant < 0){
+            this.cantidad = 0.00;
+        }else{
+            this.cantidad = getCant;
+        }
     }
 
     public String getTitular() {
@@ -57,10 +61,10 @@ public class Cuenta {
     
     public void retirar(Double cant) {
         
-        if(cant > this.cantidad){
+        this.cantidad -= cant;
+        
+        if(this.cantidad < 0){
             this.cantidad = 0.00;
-        }else{
-            this.cantidad -= cant;
         }
     }
 

@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package javaapplication1;
-
 /**
  *
  * @author Jorge
@@ -12,17 +11,19 @@ package javaapplication1;
 public class JavaApplication1 {
 
     public Cuenta cuenta;
+    public Cuenta cuenta2;
     
     public void main(String[] args) {
         // TODO code application logic here
         
         cuenta = new Cuenta("Jorge Lopez");
+        cuenta2 = new Cuenta("Jorge Lopez", 235.10);
         
         cuenta.setCantidad(500.30);
                 
         cuenta.ingresar(35.27);
         
-        cuenta.retirar(314.00);
+        cuenta2.retirar(314.00);
         
     }
     
