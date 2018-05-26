@@ -11,11 +11,19 @@ package javaapplication1;
  */
 public class JavaApplication1 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+    public Cuenta cuenta;
+    
+    public void main(String[] args) {
         // TODO code application logic here
+        
+        cuenta = new Cuenta("Jorge Lopez");
+        
+        cuenta.setCantidad(500.30);
+                
+        cuenta.ingresar(35.27);
+        
+        cuenta.retirar(314.00);
+        
     }
     
 }
