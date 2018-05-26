@@ -14,8 +14,15 @@ public class Cuenta {
     public String titular;
     public Double cantidad;
     
+    
     public Cuenta(String getTitular) {
         titular = getTitular;
+        cantidad = 0.00;
+    }
+    
+    public Cuenta(String getTitular, Double getCant) {
+        titular = getTitular;
+        cantidad = getCant;
     }
 
     public String getTitular() {
