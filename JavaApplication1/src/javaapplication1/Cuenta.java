@@ -16,13 +16,13 @@ public class Cuenta {
     
     
     public Cuenta(String getTitular) {
-        titular = getTitular;
-        cantidad = 0.00;
+        this.titular = getTitular;
+        this.cantidad = 0.00;
     }
     
     public Cuenta(String getTitular, Double getCant) {
-        titular = getTitular;
-        cantidad = getCant;
+        this.titular = getTitular;
+        this.cantidad = getCant;
     }
 
     public String getTitular() {
